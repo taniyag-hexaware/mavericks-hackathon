@@ -33,7 +33,8 @@
             "type": "Rack"
         },
         {
-            "type": "Hearth"
+            "type": "Hearth",
+            "img":"https://thumbs.dreamstime.com/z/pizza-oven-hearth-7516267.jpg"
         }
     ]
 }

@@ -37,6 +37,7 @@ import { NzProgressModule } from 'ng-zorro-antd/progress';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import  '@google/model-viewer';
 import { ProductsCardComponent } from './products-card/products-card.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 
 
@@ -57,6 +58,7 @@ registerLocaleData(en);
     FooterComponent,
     ProductCardComponent,
     ProductsCardComponent,
+    ProductDetailsComponent,
    
   ],
   imports: [
