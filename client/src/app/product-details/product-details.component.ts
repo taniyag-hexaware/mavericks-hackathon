@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as test from '../products-card/test.json'
 
 @Component({
   selector: 'app-product-details',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailsComponent implements OnInit {
 
+  data :any =  test.value[0];
   constructor() { }
 
   ngOnInit(): void {
