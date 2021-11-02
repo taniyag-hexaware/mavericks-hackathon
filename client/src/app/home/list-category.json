@@ -6,35 +6,43 @@
         },
         {
             "type": "Chair",
-            "img": "https://tulanedigcontent.blob.core.windows.net/ms-incubation-2021/thumbnails/Space%20Saver.png"
+            "img": "https://images.unsplash.com/photo-1610647186667-c62601403304?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
         },
         {
-            "type": "Lamp"
+            "type": "Lamp",
+            "img":"https://images.pexels.com/photos/2168382/pexels-photo-2168382.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
         },
         {
-            "type": "Table"
+            "type": "Table",
+            "img":"https://i.pinimg.com/474x/c3/ef/07/c3ef07c1710d5aad3ba4a7e68e61f3a9.jpg"
         },
         {
-            "type": "Set"
+            "type": "Set",
+            "img":""
         },
         {
-            "type": "Cubicle"
+            "type": "Cubicle",
+            "img":"https://i.pinimg.com/564x/e6/ad/22/e6ad2241188928d7233926310ea74855.jpg"
         },
         {
-            "type": "Lounge"
+            "type": "Lounge",
+            "img":"https://i.pinimg.com/564x/c6/54/cd/c654cd4cce3d1fba84e64f4a54136255.jpg"
         },
         {
-            "type": "Cabin"
+            "type": "Cabin",
+            "img":"https://i.pinimg.com/474x/e8/a4/cd/e8a4cdf722c8d7ad1412f80befda8161.jpg"
         },
         {
-            "type": "Large Seater"
+            "type": "Large Seater",
+            "img":"https://i.pinimg.com/564x/7c/1e/da/7c1eda06177ad596c8ba9303748a0ce3.jpg"
         },
         {
-            "type": "Rack"
+            "type": "Rack",
+            "img":"https://i.pinimg.com/564x/1f/d6/fb/1fd6fb00c60f4fe2eb80c506e6f568b8.jpg"
         },
         {
             "type": "Hearth",
-            "img":"https://thumbs.dreamstime.com/z/pizza-oven-hearth-7516267.jpg"
+            "img":"https://images.pexels.com/photos/1724228/pexels-photo-1724228.jpeg?cs=srgb&dl=pexels-craig-adderley-1724228.jpg&fm=jpg"
         }
     ]
 }
