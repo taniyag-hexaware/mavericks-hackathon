@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as test from './test.json'
 
 @Component({
   selector: 'app-products-card',
@@ -7,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsCardComponent implements OnInit {
 
+  data :any =  test.value;
   constructor() { }
 
  count = [1,2,3,4];
-  ngOnInit(): void {
+  ngOnInit() {
+   
+    console.log(this.data[0])
   }
 
 }
