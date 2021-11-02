@@ -59,11 +59,10 @@ a:hover {
 // }
 
 .section-products #product-1 .part-1::before {
-     //background: url("https://tulanedigcontent.blob.core.windows.net/web-ar-demo/Book%20Rack_1.png") no-repeat center;
-  //background: {{data.Product_Image}};
+   
     background-size: cover;
 		transition: all 0.3s;
-        //background-image: url({{data.Product_Image}});
+        
 }
 
 .section-products #product-2 .part-1::before {
