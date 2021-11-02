@@ -12,7 +12,8 @@
         [loop]="true"
       >
         <ng-template swiperSlide *ngFor="let c of categories">
-          <div class="category-card">{{ c.name }}</div>
+        
+          <div class="category-card" style="background:url({{c.img}})">{{ c.type }}</div>
         </ng-template>
       </swiper>
     </div>

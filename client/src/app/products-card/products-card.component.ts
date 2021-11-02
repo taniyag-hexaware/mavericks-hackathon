@@ -8,7 +8,7 @@ import * as test from './test.json'
 })
 export class ProductsCardComponent implements OnInit {
 
-  data :any =  test.value;
+  data :any =  test.value[0];
   constructor() { }
 
  count = [1,2,3,4];

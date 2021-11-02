@@ -8,6 +8,8 @@ import { CartService } from '../services/cart.service';
 import { ProductService } from '../services/product.service';
 import { Products, Product } from '../shared/models/product.model';
 import '@google/model-viewer';
+import * as categoryData from './list-category.json'
+import * as data from './test.json'
 
 @Component({
   selector: 'app-home',
@@ -17,20 +19,23 @@ import '@google/model-viewer';
 })
 export class HomeComponent implements OnInit {
   products: Product[] = [];
-  categories: any[] = [
-    {
-      name: 'Laptops',
-    },
-    {
-      name: 'Accessories',
-    },
-    {
-      name: 'Cameras',
-    },
-  ];
+  // categories: any[] = [
+  //   {
+  //     name: 'Laptops',
+  //   },
+  //   {
+  //     name: 'Accessories',
+  //   },
+  //   {
+  //     name: 'Cameras',
+  //   },
+  // ];
   loading = false;
   productPageCounter = 1;
   additionalLoading = false;
+  categories :any =  categoryData.value;
+  mainData : any = data.value[0];
+  Product_Image: "https://tulanedigcontent.blob.core.windows.net/web-ar-demo/Book%20Rack_1.png";
 
   constructor(
     private productService: ProductService,

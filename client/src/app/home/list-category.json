@@ -1,0 +1,39 @@
+{
+    "value": [
+        {
+            "type": "Sofa",
+            "img": "https://hnicorpcdn.azureedge.net/furniture-mr/thumbnails/hexa1023.png"
+        },
+        {
+            "type": "Chair",
+            "img": "https://tulanedigcontent.blob.core.windows.net/ms-incubation-2021/thumbnails/Space%20Saver.png"
+        },
+        {
+            "type": "Lamp"
+        },
+        {
+            "type": "Table"
+        },
+        {
+            "type": "Set"
+        },
+        {
+            "type": "Cubicle"
+        },
+        {
+            "type": "Lounge"
+        },
+        {
+            "type": "Cabin"
+        },
+        {
+            "type": "Large Seater"
+        },
+        {
+            "type": "Rack"
+        },
+        {
+            "type": "Hearth"
+        }
+    ]
+}
