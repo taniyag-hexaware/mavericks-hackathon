@@ -1,4 +1,6 @@
 .header-container {
+  background-color:#d33d29;
+  color:#fff !important;
   height: 60px;
   padding: 0 16px;
   display: flex;
@@ -11,6 +13,8 @@
     align-items: center;
   }
   &__left {
+
+    text-align: left;
   }
   &__middle {
     flex-grow: 1;
@@ -22,7 +26,7 @@
     position: relative;
     .cart-counter {
       color: #fff;
-      background-color: red;
+      background-color: green;
       width: 17px;
       height: 17px;
       font-size: 11px;

@@ -1,4 +1,4 @@
-<header class="header-container">
+<header class="header-container" >
   <div class="header-container__left">
     <button
       nz-button
@@ -11,12 +11,13 @@
       <i
         nz-icon
         nzType="menu"
-        [ngStyle]="{ 'font-size': '1.25rem', 'padding-top': '6px' }"
+        [ngStyle]="{ 'font-size': '1.25rem', 'padding-top': '6px','color':'white' }"
       ></i>
     </button>
   </div>
   <div class="header-container__middle">
-    <h3 routerLink="/">Eccom</h3>
+    <img src="./eagleIcon.png">
+    <h3 routerLink="/" style="color:white">WebAR</h3>
   </div>
   <div class="header-container__right">
     <ng-container>
@@ -36,7 +37,7 @@
         <i
           nz-icon
           nzType="shopping-cart"
-          [ngStyle]="{ fontSize: '24px', paddingTop: '3px' }"
+          [ngStyle]="{ fontSize: '24px', paddingTop: '3px','color':'white' }"
         ></i>
       </button>
       <nz-dropdown-menu #menu="nzDropdownMenu">

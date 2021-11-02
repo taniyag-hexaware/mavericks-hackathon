@@ -26,10 +26,11 @@
         font-weight: 500;
         text-transform: uppercase;
         color: #fff;
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
-        cursor: pointer;
+        //background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size:cover !important;
+        box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+        //animation: gradient 15s ease infinite;
+        //cursor: pointer;
       }
     }
   }
@@ -69,6 +70,12 @@
       width: 100%;
     }
   }
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 768px) {
