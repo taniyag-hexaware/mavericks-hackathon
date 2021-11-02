@@ -22,10 +22,12 @@
 					</div>
 				</div>
 			</div>
+			
 			<div class="row">
-				<div *ngFor="let i of data">
-					<div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6">
-						<div style="overflow: hidden;" class="mb-5 single-product">
+				<div *ngFor="let i of data" class="col-md-3">
+					
+						<!-- <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6" data-aos="fade-up" data-aos-delay="200"> -->
+						<div class="mb-5 product single-product">
 							<div style="position: relative; overflow: hidden;background-color: rgb(238, 238, 238);">
 								<img class="c" width="200px" height="200px" src={{i.Product_Image}}
 									alt="A 3D model of an astronaut"
@@ -37,7 +39,8 @@
 								<h4 class="product-price">{{i.PriceText}}</h4>
 							</div>
 						</div>
-					</div>
+					
+					<!-- </div> -->
 
 				</div>
 			</div>
