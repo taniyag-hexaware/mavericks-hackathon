@@ -22,24 +22,27 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<div *ngFor="let i of data" class="col-md-3">
-					
-						<!-- <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6" data-aos="fade-up" data-aos-delay="200"> -->
-						<div class="mb-5 product single-product">
+
+					<!-- <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6" data-aos="fade-up" data-aos-delay="200"> -->
+					<div class="mb-5 product single-product">
+						<a [title]="data.Name + ' details'" [routerLink]="['/product', i.Model_ID]">
 							<div style="position: relative; overflow: hidden;background-color: rgb(238, 238, 238);">
 								<img class="c" width="200px" height="200px" src={{i.Product_Image}}
 									alt="A 3D model of an astronaut"
 									style="display: block; margin-left: auto; margin-right: auto;grid-column: 9 / 13;grid-row: 1 / 7;">
-							</div>
-							<div class="part-2 mt-3">
-								<h3 class="product-title">{{i.Name}}</h3>
-								<p>{{i.Short_Description}}</p>
-								<h4 class="product-price">{{i.PriceText}}</h4>
-							</div>
+							</div>		
+						</a>
+						
+						<div class="part-2 mt-3">
+							<h3 class="product-title">{{i.Name}}</h3>
+							<p>{{i.Short_Description}}</p>
+							<h4 class="product-price">{{i.PriceText}}</h4>
 						</div>
-					
+					</div>
+
 					<!-- </div> -->
 
 				</div>

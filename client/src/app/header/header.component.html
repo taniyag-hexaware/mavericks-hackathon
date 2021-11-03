@@ -16,7 +16,9 @@
     </button>
   </div>
   <div class="header-container__middle">
-    <img src="./eagleIcon.png">
+    
+    <img src="assets/eagleIcon.png" height="40" width="40" class="mr-2">
+    
     <h3 routerLink="/" style="color:white">WebAR</h3>
   </div>
   <div class="header-container__right">
@@ -141,15 +143,16 @@
 </div> -->
 
 <div [className]="isMenuOpen ? 'side-menu show' : 'side-menu'">
-  <i nz-icon nzType="close" nzTheme="outline" (click)="toggleMenu()"></i>
+  <i nz-icon nzType="close" nzTheme="outline" (click)="toggleMenu()"style="color:white"></i>
   <div class="side-menu__content">
-    <h2 routerLink="/" (click)="toggleMenu()">Eccom</h2>
+    <img src="assets/eagleIcon.png" height="40" width="40" class="logo">
     <nav>
       <ul>
-        <li routerLink="/" (click)="toggleMenu()">Home</li>
-        <li routerLink="/cart" (click)="toggleMenu()">Cart</li>
-        <li routerLink="/profile" (click)="toggleMenu()">Profile</li>
-        <li routerLink="/order-history" (click)="toggleMenu()">
+        
+        <li routerLink="/" (click)="toggleMenu()"style="color: white">Home</li>
+        <li routerLink="/cart" (click)="toggleMenu()" style="color:white">Cart</li>
+        <li routerLink="/profile" (click)="toggleMenu()"style="color:white">Profile</li>
+        <li routerLink="/order-history" (click)="toggleMenu()"style="color:white">
           Order History
         </li>
       </ul>
@@ -160,6 +163,7 @@
         routerLink="/login"
         (click)="toggleMenu()"
         *ngIf="!isLoggedIn"
+        style="color:white"
       >
         Sign in
       </button>
@@ -168,6 +172,7 @@
         routerLink="/register"
         (click)="toggleMenu()"
         *ngIf="!isLoggedIn"
+        style="color:white"
       >
         Sign up
       </button>

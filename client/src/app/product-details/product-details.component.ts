@@ -1,3 +1,4 @@
+import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import * as test from '../products-card/test.json'
 
@@ -9,9 +10,12 @@ import * as test from '../products-card/test.json'
 export class ProductDetailsComponent implements OnInit {
 
   data :any =  test.value[0];
-  constructor() { }
+  constructor(private route : ActivatedRoute) { }
 
   ngOnInit(): void {
+    const routeParams = this.route.snapshot.paramMap;
+  const productIdFromRoute = String(routeParams.get('productId'));
+  console.log(productIdFromRoute);
   }
 
 }

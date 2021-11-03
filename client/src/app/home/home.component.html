@@ -6,7 +6,7 @@
     <div class="categories__list">
       <swiper [navigation]="true" [zoom]="false" [slidesPerView]="screenWidth > 1200 ? 3 : 1" [spaceBetween]="50" [pagination]="true"
         [loop]="true">
-        <ng-template swiperSlide *ngFor="let c of categories">
+         <ng-template swiperSlide *ngFor="let c of categories">
 
           <div class="category-card" style="background:url({{c.img}})" onclick="myfunc()">{{ c.type }}</div>
         </ng-template>
