@@ -1,3 +1,4 @@
+import { ProductDetailsComponent } from './product-details/product-details.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CartComponent } from './cart/cart.component';
@@ -20,7 +21,7 @@ const routes: Routes = [
     component: ProfileComponent,
     canActivate: [AuthGuardService],
   },
-  { path: 'product/:id', component: ProductComponent },
+  { path: 'product/:productId', component: ProductDetailsComponent },
   { path: 'cart', component: CartComponent },
   {
     path: 'checkout',
