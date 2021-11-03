@@ -70,6 +70,8 @@ export class HomeComponent implements OnInit {
     }, 500);
   }
 
+//myfunc define
+
   showMoreProducts(): void {
     this.additionalLoading = true;
     this.productPageCounter = this.productPageCounter + 1;
@@ -88,3 +90,4 @@ export class HomeComponent implements OnInit {
     }, 500);
   }
 }
+
