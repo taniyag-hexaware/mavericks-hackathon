@@ -1,4 +1,5 @@
 <div class="home-container">
+<<<<<<< HEAD
   <div class="row justify-content-center text-center">
     <div class="col-md-8 col-lg-6">
       <div class="header">
@@ -6,13 +7,17 @@
         <h2 style="color: #444444 !important;">Categories</h2>
       </div>
     </div>
+
   <div class="categories">
+    <div class="categories__header">
+      <h2>Categories</h2>
+    </div>
     <div class="categories__list">
       <swiper [navigation]="true" [zoom]="false" [slidesPerView]="screenWidth > 1200 ? 3 : 1" [spaceBetween]="50" [pagination]="true"
         [loop]="true">
          <ng-template swiperSlide *ngFor="let c of categories">
 
-          <div class="category-card" style="background:url({{c.img}})">{{ c.type }}</div>
+          <div class="category-card" style="background:url({{c.img}})" onclick="myfunc()">{{ c.type }}</div>
         </ng-template>
       </swiper>
     </div>
@@ -20,6 +25,5 @@
   
   
 </div>
-
 
 <app-products-card></app-products-card>
