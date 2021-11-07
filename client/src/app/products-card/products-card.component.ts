@@ -14,7 +14,12 @@ export class ProductsCardComponent implements OnInit {
 
  count = [1,2,3,4];
   ngOnInit() {
-  
+    this.modelService.getModel().subscribe(
+      data=>{
+        this.data=data.result;
+        console.log(this.data);
+      }
+   )
    
   }
 

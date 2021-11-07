@@ -11,11 +11,13 @@ import {ModelService} from '../services/model.service';
 export class ProductDetailsComponent implements OnInit {
 
   data :any =  test.value[0];
+  variants:any=[];
   constructor(private route : ActivatedRoute, private modelService : ModelService) { }
 
   ngOnInit(): void {
   const routeParams = this.route.snapshot.paramMap;
   const productIdFromRoute = String(routeParams.get('productId'));
+
   console.log(productIdFromRoute);
   this.modelService.getModelByID(productIdFromRoute).subscribe(
      data=>{
@@ -23,6 +25,11 @@ export class ProductDetailsComponent implements OnInit {
        console.log(this.data);
      }
   )
+
+  }
+  onSelect(event)
+  {
+    
   }
 
 }

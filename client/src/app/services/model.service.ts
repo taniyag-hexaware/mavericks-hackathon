@@ -7,13 +7,13 @@ import { Observable } from 'rxjs';
 })
 export class ModelService {
 
-  getApi : string ='http://localhost:7006/getmodel';
+  getApi : string ='http://localhost:7006/api/models/';
   getByModelId : string ='http://localhost:7006/api/model/modelId';
   constructor(private http: HttpClient) {}
 
-  public getModel(id : string) : Observable<any>{
+  public getModel() : Observable<any>{
    
-      return this.http.get<any>(this.getApi+ '/' + id ); 
+      return this.http.get<any>(this.getApi); 
     
    }
    public getModelByID(id : string) : Observable<any>{
