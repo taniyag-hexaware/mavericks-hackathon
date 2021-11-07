@@ -1,5 +1,5 @@
 <div style="background-color: #eee;height:100%">
-<!-- <section class="mb-5"> -->
+  <!-- <section class="mb-5"> -->
 
 
 
@@ -33,7 +33,16 @@
                     shadow-intensity="1" auto-rotate="" magic-leap="" loading="lazy" poster={{data.Product_Image}}
                     ar-status="not-presenting"
                     style="background-color: rgb(238, 238, 238); width: 400px; height: 300px;">
+                    <br>
+                    <div id="controls" class="dim" style="position: absolute; bottom:10px">
+                      
+                      <select id="src" (change)="onSelect($event.target.value)" placeholder="Re">
+                        <label for="src">Product:</label>
+                        <option *ngFor="let v of variants" value={{v.Src}}>{{v.Name}}</option>
+                      </select>
 
+                      
+                    </div>
                   </model-viewer>
 
                 </div>
@@ -59,46 +68,35 @@
 
     </div>
     <div class="col-md-6">
-
-      <h2>Grey Sofa</h2>
-      <p class="mb-2 text-muted text-uppercase small">Sofas</p>
-      <ul class="rating">
-        <li>
-          <i class="fas fa-star fa-sm text-primary"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-primary"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-primary"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-primary"></i>
-        </li>
-        <li>
-          <i class="far fa-star fa-sm text-primary"></i>
-        </li>
-      </ul>
-      <p><span class="mr-1"><strong>$500</strong></span></p>
-      <p class="pt-1">Laying back on this reclining chair and sipping some tea is the perfect
-        remedy to a tiring day. Sink into the soft premium black leather and foam to relax.
-
-      </p>
-
-      <!-- Section: Color -->
-
-
-      <div class="mt-5">
-        <h6 class="font-weight-bold mb-3">Color</h6>
-        <div class="colors">
-          <ul id="marker">
-            <li id="marker-1"></li>
-            <li id="marker-2"></li>
-            <li id="marker-3"></li>
-
-          </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2>{{data.Name}}</h2>
+            <p class="mb-2 text-muted text-uppercase small">{{data.SubCategory}}</p>
+            <p><span class="mr-1"><strong>{{data.PriceText}}</strong></span></p>
+          </div>
+          <div class="col-sm-6">
+            <img src={{data.qr}} class="qrcode" style="margin-left: 100px;">
+            <div class="row" style="margin-left: 110px;">
+              <!-- <div class="col-sm-8"> -->
+                <p class="qrtext" style="float:left;">View in AR </p>
+              <!-- </div> -->
+              <!-- <div class="col-md-2"> -->
+                <i class="fa fa-android" style="font-size:24px; color:#99cc00;margin-left:10px"></i>
+              <!-- </div> -->
+              <!-- <div class="col-md-2"> -->
+                <i class="fa fa-apple" style="font-size:24px;margin-left:10px"></i>
+              <!-- </div> -->
+            </div>
+          </div>
         </div>
       </div>
+
+
+      <p class="pt-1">{{data.Description}}</p>
+      
+
+
 
       <!-- Section: Color -->
 
@@ -110,5 +108,5 @@
     </div>
   </div>
 
-<!-- </section> -->
+  <!-- </section> -->
 </div>
