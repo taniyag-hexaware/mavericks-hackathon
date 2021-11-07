@@ -36,6 +36,7 @@ export class HomeComponent implements OnInit {
   categories :any =  categoryData.value;
   mainData : any = data.value[0];
   Product_Image: "https://tulanedigcontent.blob.core.windows.net/web-ar-demo/Book%20Rack_1.png";
+  category:any = 'test';
 
   constructor(
     private productService: ProductService,
@@ -88,6 +89,12 @@ export class HomeComponent implements OnInit {
         }
       );
     }, 500);
+  }
+
+  categorySelect(category)
+  {
+    this.category=category;
+  
   }
 }
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import * as test from './test.json';
 import {ModelService} from '../services/model.service'
 
@@ -10,6 +10,7 @@ import {ModelService} from '../services/model.service'
 export class ProductsCardComponent implements OnInit {
 
   data :any =  test.value;
+  @Input() public category 
   constructor(private modelService : ModelService) { }
 
  count = [1,2,3,4];
@@ -18,9 +19,22 @@ export class ProductsCardComponent implements OnInit {
       data=>{
         this.data=data.result;
         console.log(this.data);
+        
       }
    )
+   console.log(this.category);
    
   }
+ 
+ngOnChanges(changes: SimpleChanges)
+ {    console.log(changes.category.currentValue) 
+      this.modelService.getModelByCategory(changes.category.currentValue).subscribe(
+        data=>{
+         console.log(data);
+        }
+      )
+}
+
+
 
 }

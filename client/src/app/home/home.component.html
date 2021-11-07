@@ -16,8 +16,10 @@
       <swiper [navigation]="true" [zoom]="false" [slidesPerView]="screenWidth > 1200 ? 3 : 1" [spaceBetween]="50" [pagination]="true"
         [loop]="true">
          <ng-template swiperSlide *ngFor="let c of categories">
-
-          <div class="category-card" style="background:url({{c.img}})" >{{ c.type }}</div>
+          <a (click)="categorySelect(c.type)">
+            <div class="category-card" style="background:url({{c.img}})">{{ c.type }}</div>
+          </a>
+          
         </ng-template>
       </swiper>
     </div>
@@ -26,4 +28,4 @@
   
 </div>
 
-<app-products-card></app-products-card>
+<app-products-card [category]=category></app-products-card>
