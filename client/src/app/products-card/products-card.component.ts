@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as test from './test.json'
+import * as test from './test.json';
+import {ModelService} from '../services/model.service'
 
 @Component({
   selector: 'app-products-card',
@@ -9,12 +10,12 @@ import * as test from './test.json'
 export class ProductsCardComponent implements OnInit {
 
   data :any =  test.value;
-  constructor() { }
+  constructor(private modelService : ModelService) { }
 
  count = [1,2,3,4];
   ngOnInit() {
+  
    
-    console.log(this.data[0])
   }
 
 }

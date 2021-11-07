@@ -8,7 +8,8 @@ const {
     updatemodel,
     deletemodel,
     getmodel,
-    getmodelbycategory
+    getmodelbycategory,
+    getmodelbymodelid
   
 } = require("../controllers/modelViewer");
 
@@ -31,6 +32,9 @@ router.get("/model/:id/", getmodel);
 
 // to get model by category
 router.get("/model/category/:category/", getmodelbycategory);
+
+// to get model by modelid
+router.get("/model/modelId/:id/", getmodelbymodelid);
 
 
 // we will export the router to import it in the index.js

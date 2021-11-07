@@ -186,5 +186,34 @@ exports.updatemodel = (req, res) => {
         });
       });
   };
+
+
+  // to get modelby modelid
+  exports.getmodelbymodelid = (req, res) => {
+    modelViewer.find({ 'Model_Id': req.params.id })
+      .sort("-createdAt")
+      .then(model => {
+        if (!model) {
+          //logger.warn("The workOrderId " + req.params.id + " does not exist")
+          return res.status(404).send(
+            "model not found with id " + req.params.id
+          );
+        }
+        //logger.info("models with workOrderid " + req.params.id + " found successfully")
+        res.status(200).send(model);
+      }).catch(err => {
+        if (err.kind === 'String') {
+          //logger.error("Incorrect workOrderid " + req.params.id)
+          return res.status(404).send(
+            
+             "model not found with id " + req.params.id
+          );
+        }
+        //logger.error("Error getting model with id "+ req.params.id)
+        return res.status(500).send(
+        "Error getting model with id " + req.params.id
+        );
+      });
+  };
   
   
