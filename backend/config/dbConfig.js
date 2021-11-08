@@ -5,7 +5,14 @@ dotenv.config();
 function connect() {
     return new Promise((resolve, reject) => {
           mongoose.connect(process.env.DB_CONNECT,
-            { useNewUrlParser: true}
+            { useNewUrlParser: true,
+             
+                 // useNewUrlParser: true,    
+              useUnifiedTopology: true,   
+               useCreateIndex: true,    
+               useFindAndModify: false,
+              
+              }
       )
             .then((res, err) => {
               if (err) return reject(err);
