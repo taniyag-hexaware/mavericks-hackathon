@@ -190,7 +190,7 @@ exports.updatemodel = (req, res) => {
 
   // to get modelby modelid
   exports.getmodelbymodelid = (req, res) => {
-    modelViewer.find({ 'Model_Id': req.params.id })
+    modelViewer.find({ 'Model_ID': req.params.id })
       .sort("-createdAt")
       .then(model => {
         if (!model) {
