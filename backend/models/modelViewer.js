@@ -72,7 +72,7 @@ const modelViewer = new mongoose.Schema(
 
         variants:{
 
-            type:String
+            type:Array
 
         }
     },
