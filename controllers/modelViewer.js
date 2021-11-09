@@ -6,7 +6,7 @@ const modelViewer = require("../models/modelViewer");
 exports.createmodel = (req, res) => {
 
     const ModelViewer = new modelViewer({
-      IosSrc: req.IosSrc,
+      IosSrc: req.body.IosSrc,
       Src: req.body.Src,
       Description: req.body.Description,
       Model_ID: req.body.Model_ID,
